@@ -1,3 +1,68 @@
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+/* Modo claro */
+
+body.light {
+    --color-bg: #FFFFFF;
+    --color-text: #000000;
+}
+
+/* Modo oscuro */
+
+body.dark {
+    --color-bg: #000000;
+    --color-text: #FFFFFF;
+}
+
+/* Switch */
+
+.lbl {
+    display: inline-block;
+    width: 65px;
+    height: 33px;
+    background-color: blue;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+}
+
+.lbl::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #EEE;
+    border-radius: 100px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: .2s;
+}
+
+#switch:checked + .lbl::after {
+    left: 36px;
+}
+
+#switch:checked + .lbl {
+    background-color: aqua;
+}
+
+#switch {
+    display: none;
+}
+
+/* Titulo h1 */
+
+h1 {
+    color: var(--color-text);
+}
+
+/* Footer */
+
 footer {
     text-align: center;
 }
