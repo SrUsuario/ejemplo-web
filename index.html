@@ -1,26 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Ejemplo-Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="SrUsuario">
+    <meta name="description" content="Ejemplo Web">
+    <meta name="keywords" content="Ejemplo, Web">
+    <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/estilos.css">
-
 </head>
 
 <body>
-    <input type="checkbox" id="switch">
-    <label for="switch" class="lbl"></label>
-    <h1>Ejemplo-Web</h1>
-
-    <p>Esta es una página web de ejemplo</p>
+    <!-- Div que contiene la imagen y texto del avatar -->
+    <div id="divAvatar">
+        <img id="imgAvatar" src="https://avatars.githubusercontent.com/u/115171836?v=4" alt="Avatar">
+        <p>Ejemplo-Web de SrUsuario</p>
+    </div>
+    <!-- Div que contiene el switch -->
+    <div>
+        <h2>Configuración del tema</h2>
+        <p>Pulsa en el switch para cambiar entre tema claro o oscuro</p>
+        <input type="checkbox" id="switch">
+        <label for="switch" class="lbl"></label>
+        <p id="infoSwitch">Esta página está en tema claro</p>
+    </div>
+    <!-- Div que contiene el texto -->
+    <div>
+        <h2>Título</h2>
+        <p>Esta es una página web de ejemplo</p>
+    </div>
     <hr>
-    <script src="js/script.js"></script>
-
+    <!-- Footer -->
     <footer>
-        <p>Hecho en GitHub</p>
+        <p>Hecho en GitHub Pages</p>
         <p>Por SrUsuario</p>
     </footer>
+    <script src="js/modeDark.js"></script>
 </body>
 
 </html>

@@ -1,20 +1,35 @@
+/* Color del fondo y de la letra (todo dentro de body lo hereda) */
+
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
 }
 
-/* Modo claro */
+/* Tema claro */
 
 body.light {
     --color-bg: #FFFFFF;
     --color-text: #000000;
 }
 
-/* Modo oscuro */
+/* Tema oscuro */
 
 body.dark {
     --color-bg: #000000;
     --color-text: #FFFFFF;
+}
+
+/* Div Avatar */
+
+#divAvatar {
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+#imgAvatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
 }
 
 /* Switch */
@@ -43,22 +58,16 @@ body.dark {
     transition: .2s;
 }
 
-#switch:checked + .lbl::after {
+#switch:checked+.lbl::after {
     left: 36px;
 }
 
-#switch:checked + .lbl {
+#switch:checked+.lbl {
     background-color: aqua;
 }
 
 #switch {
     display: none;
-}
-
-/* Titulo h1 */
-
-h1 {
-    color: var(--color-text);
 }
 
 /* Footer */
