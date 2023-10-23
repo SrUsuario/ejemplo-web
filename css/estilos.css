@@ -9,13 +9,13 @@ body {
 
 body.light {
     --color-bg: #FFFFFF;
-    --color-text: #000000;
+    --color-text: #202124;
 }
 
 /* Tema oscuro */
 
 body.dark {
-    --color-bg: #000000;
+    --color-bg: #202124;
     --color-text: #FFFFFF;
 }
 
